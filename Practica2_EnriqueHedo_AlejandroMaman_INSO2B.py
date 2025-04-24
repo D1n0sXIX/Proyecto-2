@@ -72,7 +72,7 @@ def mostrar_top_clientes():
             print(f"{fila[0]:6} {fila[1]:35} {fila[2]:.2f}")
         cursor.close()
     except mysql.connector.Error as err:
-        print("Error -> Se ha perdido la conexion")
+        print("Error")
 
 def menu_principal():
     while True:
