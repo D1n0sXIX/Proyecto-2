@@ -17,6 +17,7 @@ def conectarBasedatos():
             user=usuario,
             password=password,
             database="classicmodels"
+            charset='utf8'
         )
         print("\nConectado")
     except mysql.connector.Error as err:
